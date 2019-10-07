@@ -1,0 +1,1281 @@
+14:17:23.011 main INFO SparkContext: Running Spark version 2.3.1
+14:17:23.359 main WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14:17:23.468 main INFO SparkContext: Submitted application: 7eaec879-293d-4f01-a918-4e471a402981
+14:17:23.545 main INFO SecurityManager: Changing view acls to: manav.sehgal
+14:17:23.545 main INFO SecurityManager: Changing modify acls to: manav.sehgal
+14:17:23.546 main INFO SecurityManager: Changing view acls groups to: 
+14:17:23.546 main INFO SecurityManager: Changing modify acls groups to: 
+14:17:23.547 main INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(manav.sehgal); groups with view permissions: Set(); users  with modify permissions: Set(manav.sehgal); groups with modify permissions: Set()
+14:17:23.912 main INFO Utils: Successfully started service 'sparkDriver' on port 65356.
+14:17:23.933 main INFO SparkEnv: Registering MapOutputTracker
+14:17:23.949 main INFO SparkEnv: Registering BlockManagerMaster
+14:17:23.952 main INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+14:17:23.952 main INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+14:17:23.985 main INFO DiskBlockManager: Created local directory at C:\Users\manav.sehgal\AppData\Local\Temp\blockmgr-39ed1f1b-b9c3-4dde-8089-0c6d933d3700
+14:17:24.006 main INFO MemoryStore: MemoryStore started with capacity 1992.0 MB
+14:17:24.017 main INFO SparkEnv: Registering OutputCommitCoordinator
+14:17:24.081 main INFO log: Logging initialized @2416ms
+14:17:24.131 main INFO Server: jetty-9.3.z-SNAPSHOT
+14:17:24.145 main INFO Server: Started @2481ms
+14:17:24.163 main INFO AbstractConnector: Started ServerConnector@5fd6543f{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+14:17:24.163 main INFO Utils: Successfully started service 'SparkUI' on port 4040.
+14:17:24.184 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@28276e50{/jobs,null,AVAILABLE,@Spark}
+14:17:24.184 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@3faf2e7d{/jobs/json,null,AVAILABLE,@Spark}
+14:17:24.185 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4648ce9{/jobs/job,null,AVAILABLE,@Spark}
+14:17:24.187 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@274872f8{/jobs/job/json,null,AVAILABLE,@Spark}
+14:17:24.187 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@76ba13c{/stages,null,AVAILABLE,@Spark}
+14:17:24.188 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@eb6449b{/stages/json,null,AVAILABLE,@Spark}
+14:17:24.188 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7c351808{/stages/stage,null,AVAILABLE,@Spark}
+14:17:24.189 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7e985ce9{/stages/stage/json,null,AVAILABLE,@Spark}
+14:17:24.189 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2a39fe6a{/stages/pool,null,AVAILABLE,@Spark}
+14:17:24.190 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@410ae9a3{/stages/pool/json,null,AVAILABLE,@Spark}
+14:17:24.190 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@319988b0{/storage,null,AVAILABLE,@Spark}
+14:17:24.191 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@d5ae57e{/storage/json,null,AVAILABLE,@Spark}
+14:17:24.191 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@68759011{/storage/rdd,null,AVAILABLE,@Spark}
+14:17:24.192 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7e242b4d{/storage/rdd/json,null,AVAILABLE,@Spark}
+14:17:24.192 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@305f031{/environment,null,AVAILABLE,@Spark}
+14:17:24.192 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@592e843a{/environment/json,null,AVAILABLE,@Spark}
+14:17:24.193 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1d1f7216{/executors,null,AVAILABLE,@Spark}
+14:17:24.193 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@423e4cbb{/executors/json,null,AVAILABLE,@Spark}
+14:17:24.194 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6e16b8b5{/executors/threadDump,null,AVAILABLE,@Spark}
+14:17:24.194 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@43b4fe19{/executors/threadDump/json,null,AVAILABLE,@Spark}
+14:17:24.199 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@25ddbbbb{/static,null,AVAILABLE,@Spark}
+14:17:24.200 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4fad94a7{/,null,AVAILABLE,@Spark}
+14:17:24.201 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@475835b1{/api,null,AVAILABLE,@Spark}
+14:17:24.201 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@77192705{/jobs/job/kill,null,AVAILABLE,@Spark}
+14:17:24.202 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@226642a5{/stages/stage/kill,null,AVAILABLE,@Spark}
+14:17:24.204 main INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://MANAV-SEHGAL.in.corp.tavant.com:4040
+14:17:24.302 main INFO Executor: Starting executor ID driver on host localhost
+14:17:24.322 main INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 65377.
+14:17:24.322 main INFO NettyBlockTransferService: Server created on MANAV-SEHGAL.in.corp.tavant.com:65377
+14:17:24.322 main INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+14:17:24.353 main INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, MANAV-SEHGAL.in.corp.tavant.com, 65377, None)
+14:17:24.353 dispatcher-event-loop-2 INFO BlockManagerMasterEndpoint: Registering block manager MANAV-SEHGAL.in.corp.tavant.com:65377 with 1992.0 MB RAM, BlockManagerId(driver, MANAV-SEHGAL.in.corp.tavant.com, 65377, None)
+14:17:24.353 main INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, MANAV-SEHGAL.in.corp.tavant.com, 65377, None)
+14:17:24.353 main INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, MANAV-SEHGAL.in.corp.tavant.com, 65377, None)
+14:17:24.500 main INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1929425f{/metrics/json,null,AVAILABLE,@Spark}
+14:17:24.914 ForkJoinPool-1-worker-5 INFO BatchProducerAppIntelliJ$: calling https://www.bitstamp.net/api/v2/transactions/btcusd?time=day
+14:17:31.932 ForkJoinPool-1-worker-5 INFO CodeGenerator: Code generated in 163.2829 ms
+14:17:31.968 ForkJoinPool-1-worker-5 INFO SharedState: loading hive config file: jar:file:/C:/Users/manav.sehgal/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.3.1-tests.jar!/hive-site.xml
+14:17:31.985 ForkJoinPool-1-worker-5 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/C:/Project/bitcoin-analyser/spark-warehouse/').
+14:17:31.985 ForkJoinPool-1-worker-5 INFO SharedState: Warehouse path is 'file:/C:/Project/bitcoin-analyser/spark-warehouse/'.
+14:17:31.993 ForkJoinPool-1-worker-5 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@483462dd{/SQL,null,AVAILABLE,@Spark}
+14:17:31.993 ForkJoinPool-1-worker-5 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@157c0886{/SQL/json,null,AVAILABLE,@Spark}
+14:17:31.994 ForkJoinPool-1-worker-5 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@51a0241{/SQL/execution,null,AVAILABLE,@Spark}
+14:17:31.994 ForkJoinPool-1-worker-5 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@43bdd4fc{/SQL/execution/json,null,AVAILABLE,@Spark}
+14:17:31.995 ForkJoinPool-1-worker-5 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2ebe6000{/static/sql,null,AVAILABLE,@Spark}
+14:17:32.374 ForkJoinPool-1-worker-5 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+14:17:32.964 ForkJoinPool-1-worker-5 INFO BatchProducer$: fromInstant 2019-10-07T00:00:00Z
+14:17:33.429 ForkJoinPool-1-worker-5 INFO ParquetFileFormat: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:33.470 ForkJoinPool-1-worker-5 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:33.471 ForkJoinPool-1-worker-5 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:33.554 ForkJoinPool-1-worker-5 INFO CodeGenerator: Code generated in 29.2239 ms
+14:17:33.565 ForkJoinPool-1-worker-5 INFO CodeGenerator: Code generated in 7.0131 ms
+14:17:33.716 ForkJoinPool-1-worker-5 INFO SparkContext: Starting job: parquet at BatchProducer.scala:105
+14:17:33.732 dag-scheduler-event-loop INFO DAGScheduler: Registering RDD 5 (parquet at BatchProducer.scala:105)
+14:17:33.734 dag-scheduler-event-loop INFO DAGScheduler: Got job 0 (parquet at BatchProducer.scala:105) with 10 output partitions
+14:17:33.735 dag-scheduler-event-loop INFO DAGScheduler: Final stage: ResultStage 1 (parquet at BatchProducer.scala:105)
+14:17:33.735 dag-scheduler-event-loop INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+14:17:33.736 dag-scheduler-event-loop INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+14:17:33.742 dag-scheduler-event-loop INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[5] at parquet at BatchProducer.scala:105), which has no missing parents
+14:17:33.851 dag-scheduler-event-loop INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 15.8 KB, free 1992.0 MB)
+14:17:33.900 dag-scheduler-event-loop INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 7.0 KB, free 1992.0 MB)
+14:17:33.902 dispatcher-event-loop-1 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on MANAV-SEHGAL.in.corp.tavant.com:65377 (size: 7.0 KB, free: 1992.0 MB)
+14:17:33.904 dag-scheduler-event-loop INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1039
+14:17:33.914 dag-scheduler-event-loop INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[5] at parquet at BatchProducer.scala:105) (first 15 tasks are for partitions Vector(0))
+14:17:33.915 dag-scheduler-event-loop INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+14:17:33.955 dispatcher-event-loop-2 WARN TaskSetManager: Stage 0 contains a task of very large size (1797 KB). The maximum recommended task size is 100 KB.
+14:17:33.957 dispatcher-event-loop-2 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 1840579 bytes)
+14:17:33.967 Executor task launch worker for task 0 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+14:17:34.035 Executor task launch worker for task 0 INFO CodeGenerator: Code generated in 13.9005 ms
+14:17:34.203 Spark Context Cleaner INFO ContextCleaner: Cleaned accumulator 0
+14:17:34.636 Executor task launch worker for task 0 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1520 bytes result sent to driver
+14:17:34.643 task-result-getter-0 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 699 ms on localhost (executor driver) (1/1)
+14:17:34.646 task-result-getter-0 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+14:17:34.652 dag-scheduler-event-loop INFO DAGScheduler: ShuffleMapStage 0 (parquet at BatchProducer.scala:105) finished in 0.896 s
+14:17:34.653 dag-scheduler-event-loop INFO DAGScheduler: looking for newly runnable stages
+14:17:34.653 dag-scheduler-event-loop INFO DAGScheduler: running: Set()
+14:17:34.653 dag-scheduler-event-loop INFO DAGScheduler: waiting: Set(ResultStage 1)
+14:17:34.653 dag-scheduler-event-loop INFO DAGScheduler: failed: Set()
+14:17:34.656 dag-scheduler-event-loop INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[7] at parquet at BatchProducer.scala:105), which has no missing parents
+14:17:34.692 dag-scheduler-event-loop INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 136.3 KB, free 1991.8 MB)
+14:17:34.694 dag-scheduler-event-loop INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 49.6 KB, free 1991.8 MB)
+14:17:34.694 dispatcher-event-loop-1 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on MANAV-SEHGAL.in.corp.tavant.com:65377 (size: 49.6 KB, free: 1991.9 MB)
+14:17:34.695 dag-scheduler-event-loop INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+14:17:34.696 dag-scheduler-event-loop INFO DAGScheduler: Submitting 10 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at parquet at BatchProducer.scala:105) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+14:17:34.696 dag-scheduler-event-loop INFO TaskSchedulerImpl: Adding task set 1.0 with 10 tasks
+14:17:34.700 dispatcher-event-loop-2 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, ANY, 7754 bytes)
+14:17:34.700 dispatcher-event-loop-2 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2, localhost, executor driver, partition 1, ANY, 7754 bytes)
+14:17:34.700 dispatcher-event-loop-2 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3, localhost, executor driver, partition 2, ANY, 7754 bytes)
+14:17:34.701 dispatcher-event-loop-2 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4, localhost, executor driver, partition 3, ANY, 7754 bytes)
+14:17:34.701 Executor task launch worker for task 1 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+14:17:34.703 Executor task launch worker for task 3 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+14:17:34.703 Executor task launch worker for task 4 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+14:17:34.703 Executor task launch worker for task 2 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+14:17:34.771 Executor task launch worker for task 4 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:34.771 Executor task launch worker for task 1 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:34.771 Executor task launch worker for task 2 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:34.771 Executor task launch worker for task 3 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:34.774 Executor task launch worker for task 4 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 8 ms
+14:17:34.774 Executor task launch worker for task 1 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 11 ms
+14:17:34.774 Executor task launch worker for task 3 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+14:17:34.774 Executor task launch worker for task 2 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+14:17:34.798 Executor task launch worker for task 1 INFO CodeGenerator: Code generated in 11.6658 ms
+14:17:34.810 Executor task launch worker for task 1 INFO CodeGenerator: Code generated in 6.403 ms
+14:17:34.835 Executor task launch worker for task 2 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.835 Executor task launch worker for task 2 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.836 Executor task launch worker for task 1 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.836 Executor task launch worker for task 1 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.838 Executor task launch worker for task 3 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.839 Executor task launch worker for task 3 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.834 Executor task launch worker for task 4 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.839 Executor task launch worker for task 4 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:34.854 Executor task launch worker for task 1 INFO CodeGenerator: Code generated in 8.6069 ms
+14:17:34.865 Executor task launch worker for task 1 INFO CodeGenerator: Code generated in 7.0145 ms
+14:17:34.897 Executor task launch worker for task 4 INFO CodeGenerator: Code generated in 12.3351 ms
+14:17:34.909 Executor task launch worker for task 3 INFO CodecConfig: Compression: SNAPPY
+14:17:34.909 Executor task launch worker for task 1 INFO CodecConfig: Compression: SNAPPY
+14:17:34.909 Executor task launch worker for task 4 INFO CodecConfig: Compression: SNAPPY
+14:17:34.909 Executor task launch worker for task 2 INFO CodecConfig: Compression: SNAPPY
+14:17:34.912 Executor task launch worker for task 3 INFO CodecConfig: Compression: SNAPPY
+14:17:34.913 Executor task launch worker for task 1 INFO CodecConfig: Compression: SNAPPY
+14:17:34.913 Executor task launch worker for task 4 INFO CodecConfig: Compression: SNAPPY
+14:17:34.913 Executor task launch worker for task 2 INFO CodecConfig: Compression: SNAPPY
+14:17:34.924 Executor task launch worker for task 4 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:34.924 Executor task launch worker for task 3 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:34.924 Executor task launch worker for task 1 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:34.924 Executor task launch worker for task 2 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:34.925 Executor task launch worker for task 4 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:34.925 Executor task launch worker for task 2 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:34.925 Executor task launch worker for task 1 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:34.925 Executor task launch worker for task 3 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:34.925 Executor task launch worker for task 1 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:34.925 Executor task launch worker for task 2 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:34.925 Executor task launch worker for task 4 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:34.925 Executor task launch worker for task 2 INFO ParquetOutputFormat: Dictionary is on
+14:17:34.925 Executor task launch worker for task 1 INFO ParquetOutputFormat: Dictionary is on
+14:17:34.925 Executor task launch worker for task 3 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:34.925 Executor task launch worker for task 3 INFO ParquetOutputFormat: Dictionary is on
+14:17:34.925 Executor task launch worker for task 3 INFO ParquetOutputFormat: Validation is off
+14:17:34.925 Executor task launch worker for task 3 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:34.925 Executor task launch worker for task 1 INFO ParquetOutputFormat: Validation is off
+14:17:34.925 Executor task launch worker for task 2 INFO ParquetOutputFormat: Validation is off
+14:17:34.925 Executor task launch worker for task 4 INFO ParquetOutputFormat: Dictionary is on
+14:17:34.925 Executor task launch worker for task 2 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:34.925 Executor task launch worker for task 1 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:34.925 Executor task launch worker for task 3 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:34.925 Executor task launch worker for task 1 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:34.925 Executor task launch worker for task 2 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:34.925 Executor task launch worker for task 2 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:34.926 Executor task launch worker for task 2 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:34.925 Executor task launch worker for task 1 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:34.925 Executor task launch worker for task 4 INFO ParquetOutputFormat: Validation is off
+14:17:34.926 Executor task launch worker for task 1 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:34.926 Executor task launch worker for task 2 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:34.925 Executor task launch worker for task 3 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:34.926 Executor task launch worker for task 3 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:34.926 Executor task launch worker for task 3 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:34.926 Executor task launch worker for task 1 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:34.926 Executor task launch worker for task 4 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:34.926 Executor task launch worker for task 4 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:34.926 Executor task launch worker for task 4 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:34.926 Executor task launch worker for task 4 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:34.926 Executor task launch worker for task 4 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:34.946 Executor task launch worker for task 1 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:34.947 Executor task launch worker for task 2 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:34.947 Executor task launch worker for task 3 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:34.947 Executor task launch worker for task 4 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:35.372 Executor task launch worker for task 3 INFO CodecPool: Got brand-new compressor [.snappy]
+14:17:35.421 Executor task launch worker for task 4 INFO CodecPool: Got brand-new compressor [.snappy]
+14:17:35.506 Executor task launch worker for task 4 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 97408
+14:17:35.506 Executor task launch worker for task 3 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 94400
+14:17:35.527 Executor task launch worker for task 1 INFO CodecPool: Got brand-new compressor [.snappy]
+14:17:35.532 Executor task launch worker for task 1 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 97236
+14:17:35.586 Executor task launch worker for task 2 INFO CodecPool: Got brand-new compressor [.snappy]
+14:17:35.589 Executor task launch worker for task 2 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 97164
+14:17:35.732 Executor task launch worker for task 2 INFO CodecConfig: Compression: SNAPPY
+14:17:35.732 Executor task launch worker for task 4 INFO CodecConfig: Compression: SNAPPY
+14:17:35.732 Executor task launch worker for task 2 INFO CodecConfig: Compression: SNAPPY
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:35.732 Executor task launch worker for task 4 INFO CodecConfig: Compression: SNAPPY
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Dictionary is on
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Validation is off
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:35.732 Executor task launch worker for task 2 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:35.732 Executor task launch worker for task 4 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Dictionary is on
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Validation is off
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:35.733 Executor task launch worker for task 4 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:35.733 Executor task launch worker for task 2 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:35.734 Executor task launch worker for task 4 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:35.742 Executor task launch worker for task 3 INFO CodecConfig: Compression: SNAPPY
+14:17:35.743 Executor task launch worker for task 3 INFO CodecConfig: Compression: SNAPPY
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Dictionary is on
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Validation is off
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:35.743 Executor task launch worker for task 3 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:35.744 Executor task launch worker for task 3 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:35.780 Executor task launch worker for task 1 INFO CodecConfig: Compression: SNAPPY
+14:17:35.781 Executor task launch worker for task 1 INFO CodecConfig: Compression: SNAPPY
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Dictionary is on
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Validation is off
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:35.781 Executor task launch worker for task 1 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:35.782 Executor task launch worker for task 1 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:35.783 Executor task launch worker for task 1 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:35.998 Executor task launch worker for task 4 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 115388
+14:17:36.087 Executor task launch worker for task 4 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141734_0001_m_000003_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141734_0001_m_000003
+14:17:36.088 Executor task launch worker for task 4 INFO SparkHadoopMapRedUtil: attempt_20191007141734_0001_m_000003_0: Committed
+14:17:36.092 Executor task launch worker for task 4 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 3019 bytes result sent to driver
+14:17:36.093 dispatcher-event-loop-0 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5, localhost, executor driver, partition 4, ANY, 7754 bytes)
+14:17:36.093 Executor task launch worker for task 5 INFO Executor: Running task 4.0 in stage 1.0 (TID 5)
+14:17:36.096 task-result-getter-1 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 1396 ms on localhost (executor driver) (1/10)
+14:17:36.104 Executor task launch worker for task 5 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:36.104 Executor task launch worker for task 5 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+14:17:36.108 Executor task launch worker for task 5 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.108 Executor task launch worker for task 5 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.111 Executor task launch worker for task 5 INFO CodecConfig: Compression: SNAPPY
+14:17:36.111 Executor task launch worker for task 5 INFO CodecConfig: Compression: SNAPPY
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Dictionary is on
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Validation is off
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:36.111 Executor task launch worker for task 5 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:36.112 Executor task launch worker for task 5 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:36.143 Executor task launch worker for task 2 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 115444
+14:17:36.236 Executor task launch worker for task 2 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141734_0001_m_000001_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141734_0001_m_000001
+14:17:36.237 Executor task launch worker for task 2 INFO SparkHadoopMapRedUtil: attempt_20191007141734_0001_m_000001_0: Committed
+14:17:36.240 Executor task launch worker for task 2 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 2976 bytes result sent to driver
+14:17:36.241 dispatcher-event-loop-3 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6, localhost, executor driver, partition 5, ANY, 7754 bytes)
+14:17:36.249 Executor task launch worker for task 6 INFO Executor: Running task 5.0 in stage 1.0 (TID 6)
+14:17:36.251 task-result-getter-2 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 1551 ms on localhost (executor driver) (2/10)
+14:17:36.317 Executor task launch worker for task 6 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:36.317 Executor task launch worker for task 6 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+14:17:36.324 Executor task launch worker for task 6 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.326 Executor task launch worker for task 6 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.329 Executor task launch worker for task 6 INFO CodecConfig: Compression: SNAPPY
+14:17:36.331 Executor task launch worker for task 6 INFO CodecConfig: Compression: SNAPPY
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Dictionary is on
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Validation is off
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:36.331 Executor task launch worker for task 6 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:36.339 Executor task launch worker for task 6 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:36.364 dispatcher-event-loop-3 INFO BlockManagerInfo: Removed broadcast_0_piece0 on MANAV-SEHGAL.in.corp.tavant.com:65377 in memory (size: 7.0 KB, free: 1992.0 MB)
+14:17:36.368 Executor task launch worker for task 3 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 118188
+14:17:36.387 Executor task launch worker for task 1 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 115664
+14:17:36.604 Executor task launch worker for task 1 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141734_0001_m_000000_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141734_0001_m_000000
+14:17:36.604 Executor task launch worker for task 1 INFO SparkHadoopMapRedUtil: attempt_20191007141734_0001_m_000000_0: Committed
+14:17:36.606 Executor task launch worker for task 3 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141734_0001_m_000002_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141734_0001_m_000002
+14:17:36.606 Executor task launch worker for task 3 INFO SparkHadoopMapRedUtil: attempt_20191007141734_0001_m_000002_0: Committed
+14:17:36.609 Executor task launch worker for task 1 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 3019 bytes result sent to driver
+14:17:36.610 Executor task launch worker for task 3 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 3019 bytes result sent to driver
+14:17:36.611 dispatcher-event-loop-1 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7, localhost, executor driver, partition 6, ANY, 7754 bytes)
+14:17:36.611 Executor task launch worker for task 7 INFO Executor: Running task 6.0 in stage 1.0 (TID 7)
+14:17:36.611 dispatcher-event-loop-1 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8, localhost, executor driver, partition 7, ANY, 7754 bytes)
+14:17:36.612 Executor task launch worker for task 8 INFO Executor: Running task 7.0 in stage 1.0 (TID 8)
+14:17:36.613 task-result-getter-0 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 1913 ms on localhost (executor driver) (3/10)
+14:17:36.635 Executor task launch worker for task 7 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:36.635 Executor task launch worker for task 7 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+14:17:36.642 Executor task launch worker for task 8 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:36.643 Executor task launch worker for task 8 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+14:17:36.647 Executor task launch worker for task 8 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.647 Executor task launch worker for task 8 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.655 task-result-getter-3 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 1955 ms on localhost (executor driver) (4/10)
+14:17:36.657 Executor task launch worker for task 7 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.658 Executor task launch worker for task 7 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:36.660 Executor task launch worker for task 7 INFO CodecConfig: Compression: SNAPPY
+14:17:36.661 Executor task launch worker for task 7 INFO CodecConfig: Compression: SNAPPY
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Dictionary is on
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Validation is off
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:36.661 Executor task launch worker for task 7 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:36.662 Executor task launch worker for task 7 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:36.665 Executor task launch worker for task 8 INFO CodecConfig: Compression: SNAPPY
+14:17:36.665 Executor task launch worker for task 8 INFO CodecConfig: Compression: SNAPPY
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Dictionary is on
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Validation is off
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:36.665 Executor task launch worker for task 8 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:36.666 Executor task launch worker for task 8 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:36.722 Executor task launch worker for task 5 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 95816
+14:17:36.749 Executor task launch worker for task 5 INFO CodecConfig: Compression: SNAPPY
+14:17:36.749 Executor task launch worker for task 5 INFO CodecConfig: Compression: SNAPPY
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Dictionary is on
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Validation is off
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:36.750 Executor task launch worker for task 5 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:36.751 Executor task launch worker for task 5 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:36.962 Executor task launch worker for task 6 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 95944
+14:17:37.004 Executor task launch worker for task 6 INFO CodecConfig: Compression: SNAPPY
+14:17:37.005 Executor task launch worker for task 6 INFO CodecConfig: Compression: SNAPPY
+14:17:37.005 Executor task launch worker for task 6 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:37.005 Executor task launch worker for task 6 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:37.005 Executor task launch worker for task 6 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:37.005 Executor task launch worker for task 6 INFO ParquetOutputFormat: Dictionary is on
+14:17:37.006 Executor task launch worker for task 6 INFO ParquetOutputFormat: Validation is off
+14:17:37.006 Executor task launch worker for task 6 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:37.006 Executor task launch worker for task 6 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:37.006 Executor task launch worker for task 6 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:37.006 Executor task launch worker for task 6 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:37.006 Executor task launch worker for task 6 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:37.008 Executor task launch worker for task 6 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:37.115 Executor task launch worker for task 8 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 96900
+14:17:37.138 Executor task launch worker for task 7 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 97256
+14:17:37.183 Executor task launch worker for task 7 INFO CodecConfig: Compression: SNAPPY
+14:17:37.183 Executor task launch worker for task 7 INFO CodecConfig: Compression: SNAPPY
+14:17:37.183 Executor task launch worker for task 7 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Dictionary is on
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Validation is off
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:37.184 Executor task launch worker for task 7 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:37.193 Executor task launch worker for task 8 INFO CodecConfig: Compression: SNAPPY
+14:17:37.194 Executor task launch worker for task 8 INFO CodecConfig: Compression: SNAPPY
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Dictionary is on
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Validation is off
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:37.194 Executor task launch worker for task 8 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:37.195 Executor task launch worker for task 8 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:37.286 Executor task launch worker for task 5 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 117072
+14:17:37.322 Executor task launch worker for task 5 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141736_0001_m_000004_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141736_0001_m_000004
+14:17:37.322 Executor task launch worker for task 5 INFO SparkHadoopMapRedUtil: attempt_20191007141736_0001_m_000004_0: Committed
+14:17:37.323 Executor task launch worker for task 5 INFO Executor: Finished task 4.0 in stage 1.0 (TID 5). 3019 bytes result sent to driver
+14:17:37.323 dispatcher-event-loop-1 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 9, localhost, executor driver, partition 8, ANY, 7754 bytes)
+14:17:37.324 Executor task launch worker for task 9 INFO Executor: Running task 8.0 in stage 1.0 (TID 9)
+14:17:37.324 task-result-getter-1 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 1232 ms on localhost (executor driver) (5/10)
+14:17:37.332 Executor task launch worker for task 9 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:37.332 Executor task launch worker for task 9 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+14:17:37.335 Executor task launch worker for task 9 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:37.336 Executor task launch worker for task 9 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:37.338 Executor task launch worker for task 9 INFO CodecConfig: Compression: SNAPPY
+14:17:37.339 Executor task launch worker for task 9 INFO CodecConfig: Compression: SNAPPY
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Dictionary is on
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Validation is off
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:37.339 Executor task launch worker for task 9 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:37.340 Executor task launch worker for task 9 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:37.446 Executor task launch worker for task 6 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 116908
+14:17:37.518 Executor task launch worker for task 6 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141736_0001_m_000005_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141736_0001_m_000005
+14:17:37.518 Executor task launch worker for task 6 INFO SparkHadoopMapRedUtil: attempt_20191007141736_0001_m_000005_0: Committed
+14:17:37.519 Executor task launch worker for task 6 INFO Executor: Finished task 5.0 in stage 1.0 (TID 6). 3019 bytes result sent to driver
+14:17:37.520 dispatcher-event-loop-3 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 10, localhost, executor driver, partition 9, ANY, 7754 bytes)
+14:17:37.521 Executor task launch worker for task 10 INFO Executor: Running task 9.0 in stage 1.0 (TID 10)
+14:17:37.522 task-result-getter-2 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 1281 ms on localhost (executor driver) (6/10)
+14:17:37.534 Executor task launch worker for task 10 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+14:17:37.534 Executor task launch worker for task 10 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+14:17:37.539 Executor task launch worker for task 10 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:37.539 Executor task launch worker for task 10 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+14:17:37.542 Executor task launch worker for task 10 INFO CodecConfig: Compression: SNAPPY
+14:17:37.543 Executor task launch worker for task 10 INFO CodecConfig: Compression: SNAPPY
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Dictionary is on
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Validation is off
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:37.543 Executor task launch worker for task 10 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:37.544 Executor task launch worker for task 10 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:37.606 Executor task launch worker for task 7 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 115568
+14:17:37.646 Executor task launch worker for task 7 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141736_0001_m_000006_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141736_0001_m_000006
+14:17:37.646 Executor task launch worker for task 7 INFO SparkHadoopMapRedUtil: attempt_20191007141736_0001_m_000006_0: Committed
+14:17:37.651 Executor task launch worker for task 7 INFO Executor: Finished task 6.0 in stage 1.0 (TID 7). 2976 bytes result sent to driver
+14:17:37.652 task-result-getter-0 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 1041 ms on localhost (executor driver) (7/10)
+14:17:37.672 Executor task launch worker for task 8 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 115368
+14:17:37.722 Executor task launch worker for task 8 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141736_0001_m_000007_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141736_0001_m_000007
+14:17:37.722 Executor task launch worker for task 8 INFO SparkHadoopMapRedUtil: attempt_20191007141736_0001_m_000007_0: Committed
+14:17:37.723 Executor task launch worker for task 8 INFO Executor: Finished task 7.0 in stage 1.0 (TID 8). 2976 bytes result sent to driver
+14:17:37.725 task-result-getter-3 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 1114 ms on localhost (executor driver) (8/10)
+14:17:37.810 Executor task launch worker for task 9 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 97088
+14:17:37.820 Executor task launch worker for task 9 INFO CodecConfig: Compression: SNAPPY
+14:17:37.820 Executor task launch worker for task 9 INFO CodecConfig: Compression: SNAPPY
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Dictionary is on
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Validation is off
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:37.820 Executor task launch worker for task 9 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:37.821 Executor task launch worker for task 9 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:37.821 Executor task launch worker for task 9 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:37.821 Executor task launch worker for task 9 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:37.835 Executor task launch worker for task 10 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 96100
+14:17:37.943 Executor task launch worker for task 10 INFO CodecConfig: Compression: SNAPPY
+14:17:37.944 Executor task launch worker for task 10 INFO CodecConfig: Compression: SNAPPY
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Parquet block size to 134217728
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Parquet page size to 1048576
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Parquet dictionary page size to 1048576
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Dictionary is on
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Validation is off
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Writer version is: PARQUET_1_0
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Maximum row group padding size is 0 bytes
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Page size checking is: estimated
+14:17:37.944 Executor task launch worker for task 10 INFO ParquetOutputFormat: Min row count for page size check is: 100
+14:17:37.945 Executor task launch worker for task 10 INFO ParquetOutputFormat: Max row count for page size check is: 10000
+14:17:37.947 Executor task launch worker for task 10 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : "timestamp",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "tid",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "price",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "sell",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int96 timestamp;
+  optional int32 tid;
+  optional double price;
+  optional boolean sell;
+  optional double amount;
+}
+
+       
+14:17:38.102 Executor task launch worker for task 9 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 115704
+14:17:38.157 Executor task launch worker for task 9 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141737_0001_m_000008_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141737_0001_m_000008
+14:17:38.158 Executor task launch worker for task 9 INFO SparkHadoopMapRedUtil: attempt_20191007141737_0001_m_000008_0: Committed
+14:17:38.162 Executor task launch worker for task 9 INFO Executor: Finished task 8.0 in stage 1.0 (TID 9). 2976 bytes result sent to driver
+14:17:38.165 task-result-getter-1 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 9) in 842 ms on localhost (executor driver) (9/10)
+14:17:38.196 Executor task launch worker for task 10 INFO InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 116588
+14:17:38.209 Executor task launch worker for task 10 INFO FileOutputCommitter: Saved output of task 'attempt_20191007141737_0001_m_000009_0' to file:/C:/Project/bitcoin-analyser/data/transactions/_temporary/0/task_20191007141737_0001_m_000009
+14:17:38.209 Executor task launch worker for task 10 INFO SparkHadoopMapRedUtil: attempt_20191007141737_0001_m_000009_0: Committed
+14:17:38.210 Executor task launch worker for task 10 INFO Executor: Finished task 9.0 in stage 1.0 (TID 10). 2976 bytes result sent to driver
+14:17:38.211 task-result-getter-2 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 10) in 691 ms on localhost (executor driver) (10/10)
+14:17:38.211 task-result-getter-2 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+14:17:38.211 dag-scheduler-event-loop INFO DAGScheduler: ResultStage 1 (parquet at BatchProducer.scala:105) finished in 3.549 s
+14:17:38.215 ForkJoinPool-1-worker-5 INFO DAGScheduler: Job 0 finished: parquet at BatchProducer.scala:105, took 4.498777 s
+14:17:38.478 ForkJoinPool-1-worker-5 INFO FileFormatWriter: Job null committed.
+14:17:38.485 ForkJoinPool-1-worker-5 INFO FileFormatWriter: Finished processing stats for job null.

@@ -12,7 +12,6 @@ import java.net.URI
 import org.apache.spark.sql.functions.{explode, from_json, lit}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{Dataset, SaveMode, SparkSession}
-import sun.awt.AppContext
 import com.typesafe.scalalogging.StrictLogging
 import scala.concurrent.duration._
 
@@ -122,9 +121,11 @@ object BatchProducer extends  StrictLogging {
 
     )
 
+
   }
 
   def currentInstant(implicit timer: Timer[IO]): IO[Instant] =
     timer.clockRealTime(TimeUnit.SECONDS) map Instant.ofEpochSecond
 
 }
+
